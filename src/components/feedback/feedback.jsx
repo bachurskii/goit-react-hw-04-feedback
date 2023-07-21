@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Feedback = ({ options, onLieveFeedback }) => {
+const Feedback = ({ options, onLeaveFeedback }) => {
   return (
     <div>
-      <h2>Please leave feedback</h2>
       {options.map(option => (
-        <button key={option} onClick={() => onLieveFeedback(option)}>
+        <button key={option} onClick={() => onLeaveFeedback(option)}>
           {option}
         </button>
       ))}
@@ -15,8 +14,8 @@ const Feedback = ({ options, onLieveFeedback }) => {
 };
 
 Feedback.propTypes = {
-  option: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  onLieveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
 
 export default Feedback;
