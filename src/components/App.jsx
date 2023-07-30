@@ -3,7 +3,6 @@ import Statistics from './statistics/statistics';
 import Section from './section/section';
 import Notification from './notification/notification';
 import Feedback from './feedback/feedback';
-
 const styles = {
   wrapper: {
     height: '100vh',
